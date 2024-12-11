@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(79, 53, 165);
+    height: 70vh;
+}
+
+.product {
+    width: 260px;
+    height: auto;
+    background-color: rgb(42, 21, 78);
+    margin: 200px auto;
+    border-radius: 15px;
+}
+
+.productimg {
+    width: 100%;
+    height: 130px;
+}
+
+.productimg>img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    transition: .4s;
+}
+
+.productinfo {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.productinfo>div {
+    margin: 10px 0;
+}
+
+.productinfo>div>h2 {
+    text-align: center;
+    color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productinfo>div>span {
+    color: rgb(127, 125, 194);
+    margin-left: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .4s;
+}
+
+.productinfo>div>p {
+    color: rgb(127, 125, 194);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+}
+
+.productinfo>div>button {
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: yellow;
+    box-shadow: 3px 3px 8px;
+    opacity: 0;
+    border: 0;
+}
+
+.product:hover .productinfo>div>p {
+    opacity: 1;
+}
+
+.product:hover .productinfo>div>button {
+    opacity: 1;
+}
+
+.product:hover .productinfo {
+    height: 200px;
+}
+
+.product:hover .productimg>img {
+    transform: translateY(-50px) rotate(-20deg);
+}
+
+.product:hover .productinfo>div>span {
+    margin-left: 0;
+}
